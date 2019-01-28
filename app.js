@@ -35,10 +35,10 @@ const data = {
 const jsonData =  JSON.stringify(data);
 
   const options = {
-    url: 'https://us20.api.mailchimp.com/3.0/lists/60da69193d',
+    url: 'https://us20.api.mailchimp.com/3.0/lists/enter you listid here',
     method: "POST",
     headers : {
-      "Authorization": "kevin1 2a37def5dfd3a12df781f561e868aaf6-us20"
+      "Authorization": "anystring enter your apikey here"
     },
     body: jsonData,
   }
@@ -60,6 +60,4 @@ app.post("/failure", function(req,res){
   res.redirect("/");
 });
 
-//2a37def5dfd3a12df781f561e868aaf6-us20
-//listID
-//60da69193d
+
